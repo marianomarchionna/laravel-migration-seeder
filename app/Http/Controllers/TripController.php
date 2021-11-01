@@ -7,7 +7,7 @@ use App\Trip;
 
 class TripController extends Controller
 {
-    public function listMovies() {
+    public function listTrips() {
         $trips = Trip::all();
         return view('home', compact('trips'));
     }
