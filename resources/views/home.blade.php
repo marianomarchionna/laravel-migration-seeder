@@ -8,12 +8,12 @@
 </head>
 <body>
     @foreach ($trips as $trip)
-        <p>{{ $trip['start_city'] }}</p>
-        <p>{{ $trip['destination'] }}</p>
-        <p>{{ $trip['price'] }}</p>
-        <p>{{ $trip['duration'] }}</p>
-        <p>{{ $trip['start_date'] }}</p>
-        <p>{{ $trip['return_date'] }}</p>
+        <p><strong>Città di partenza: </strong>{{ $trip['start_city'] }}</p>
+        <p><strong>Città di arrivo: </strong>{{ $trip['destination'] }}</p>
+        <p><strong>Prezzo: </strong>{{ $trip['price'] }} €</p>
+        <p><strong>Durata: </strong>{{ $trip['duration'] }}</p>
+        <p><strong>Data partenza: </strong>{{ $trip['start_date'] }}</p>
+        <p><strong>Data arrivo: </strong>{{ $trip['return_date'] }}</p><br>
     @endforeach
 </body>
 </html>

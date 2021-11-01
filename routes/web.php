@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'TripController@home')->name('pagina-home');
+Route::get('/', 'TripController@listMovies')->name('pagina-home');
